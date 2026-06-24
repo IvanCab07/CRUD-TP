@@ -1,7 +1,6 @@
-// Muestra un mensaje temporal en el area de mensajes del DOM
-const mostrarMensaje = (mensaje) => {
-    const contenedorMensajes = document.querySelector(".mensajes");
-    contenedorMensajes.style.display = 'block';
-    contenedorMensajes.innerHTML = mensaje;
-    setTimeout(() => { contenedorMensajes.style.display = 'none'; }, 2000);
+function mostrarMensaje(mensaje) {
+    const contenedor = document.querySelector(".mensajes");
+    contenedor.innerHTML = mensaje;
+    contenedor.style.display = "block";
+    setTimeout(() => contenedor.style.display = "none", 2000);
 }
